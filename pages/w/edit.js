@@ -2,6 +2,9 @@ import Head from 'next/head'
 import React, { Component } from 'react';
 import Test from './../common';
 export default class index extends Component {
+  getElement=(value)=>{
+    console.log('s',value);
+  }
   render() {
     return (
       <div className="container">
@@ -26,7 +29,9 @@ export default class index extends Component {
           <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet"></link>
         </Head>
         <main className="main">
-          <Test></Test>
+          <input placeholder="Title" className="input_write title_input"></input>
+          <input placeholder="description" className="input_write dec_input"></input>
+          <Test onSet={()=>console.log('SS')}></Test>
           <div className="header">
             <div className="btn_header">home</div >
             <div className="btn_header">about me</div>

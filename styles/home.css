@@ -12,10 +12,42 @@
   border-right: solid 1px #d1c7cc;
   padding: 55px 40px 0px 40px;
 }
+.input_write{
+  height: 42px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: solid 1px #d1c7cc;
+  line-height: 42px;
+  padding-left: 10px;
+}
+.title_input{
+  width: 100%;
+}
+.post_input{
+  width: 160px;
+  position: absolute;
+  top: -53px;
+  right: 0px;
+  background-color: white;
+  line-height: 42px;
+  height: 42px;
+  text-align: center;
+  border-radius: 5px;
+  border: solid 1px #d1c7cc;
+  cursor: pointer;
+}
+.post_input:hover{
+  background-color: #b9def0;
+  border-color: #8cbcd4;
+}
+.dec_input{
+  width: calc(100% - 180px);
+}
 .txt_popular{
   margin-top: 10px;
   font-weight: 700;
 }
+
 .center_flex{
   display: flex;
   align-items: center;
