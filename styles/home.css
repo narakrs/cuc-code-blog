@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #edafd2;
+  display: flex;
+  justify-content: center;
+}
+.main {
+  width: 1200px;
+  background-color: white;
+  border-left: solid 1px #d1c7cc;
+  border-right: solid 1px #d1c7cc;
+  padding: 55px 40px 0px 40px;
+}
+.txt_popular{
+  margin-top: 10px;
+  font-weight: 700;
+}
+.center_flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header{
+  position: fixed;
+  top: 0;
+  width: 1200px;
+  height: 50px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-bottom: solid 1px #d1c7cc;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 0px 40px 0px 30px;
+}
+.inp_search_header{
+  width: 200px;
+  height: 80%;
+  border: 2px solid #edafd2;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  outline: none;
+  padding: 0px 5px 0px 5px;
+}
+.btn_search_header:hover{
+  background-color: #ed98bd;
+}
+.btn_search_header{
+  width: 40px;
+  height: 80%;
+  background-color: #edafd2;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_one{
+  flex-grow: 1;
+}
+/* .btn_search_header:focus{
+  border: 2px solid red;
+} */
+.btn_header{
+  padding: 0px 10px 0px 20px;
+  text-transform:uppercase;
+  font-family: 'Antonio', sans-serif;
+  cursor: pointer;
+}
+.btn_header:hover{
+  color:yellowgreen;
+}
+.main_content{
+  width: 100%;
+  background-color: #d1c7cc;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+}
+.main_code{
+  flex-grow: 3;
+  height: 100%;
+  background-color: aquamarine;
+  /* padding-left: 5px; */
+}
+.main_list{
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.list_popular{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 102%;
+  height: auto;
+  margin-left: -1%;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+ .main{
+   width: 960px;
+   padding: 55px 10px 0px 10px;
+ }
+ .header{
+   width: 960px;
+ }
+}
+@media only screen and (max-width: 1023px)  {
+  .main{
+    width: 100%;
+    border: none;
+  }
+ }
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
