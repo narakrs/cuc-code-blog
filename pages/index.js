@@ -12,7 +12,7 @@ export default class index extends Component {
         <Head>
           <title>Code cục súc</title>
           <meta name='description' content="Chỉ là blog của một thằng coder, đã từng là thằng code đù nhưng sau lại trở lại con đường coder thần thánh"></meta>
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"></meta>
           <meta name='viewport' content="width=device-width, initial-sale=1"></meta>
           <meta property="og:title" content="Code cục súc"></meta>
           <meta property="og:type" content="article"></meta>
