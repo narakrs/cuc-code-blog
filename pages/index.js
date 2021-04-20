@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
 export default class index extends Component {
   static propTypes = {
@@ -12,7 +13,7 @@ export default class index extends Component {
         <Head>
           <title>Code cục súc</title>
           <meta name='description' content="Chỉ là blog của một thằng coder, đã từng là thằng code đù nhưng sau lại trở lại con đường coder thần thánh"></meta>
-          <meta httpEquiv="Content-Type" content="text/html; charset=utf-8"></meta>
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
           <meta name='viewport' content="width=device-width, initial-sale=1"></meta>
           <meta property="og:title" content="Code cục súc"></meta>
           <meta property="og:type" content="article"></meta>
@@ -65,7 +66,9 @@ export default class index extends Component {
               <div className="btn_search_header">
               <div className="fa fa-search" style={{ color: 'white' }}></div>
               </div>
-              <div className="btn_header">login</div>
+              <div className="btn_header">
+                <Link  href="/user/login"><a> login</a></Link>
+              </div>
             </div>
           </main>
       </div>
